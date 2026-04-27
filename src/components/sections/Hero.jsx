@@ -24,10 +24,6 @@ export function Hero({ onReserve }) {
       <Container className="relative z-10 h-full flex flex-col">
         <div className="flex-1 flex items-end pb-20 lg:pb-32">
           <div className="max-w-5xl">
-            <div className="flex items-center gap-3 mb-8">
-              <div className="h-px w-12 bg-bentis-gold" />
-              <span className="text-bentis-gold text-[11px] tracking-[0.4em] uppercase">Est. w zabytkowej kamienicy</span>
-            </div>
             <h1 className="h-display text-white text-6xl md:text-7xl lg:text-[112px]">
               <span className="block"><SplitText text="Luksus w sercu" /></span>
               <span className="block italic text-bentis-gold"><SplitText text="Krakowa." delayStart={600} /></span>
@@ -36,7 +32,7 @@ export function Hero({ onReserve }) {
               Zabytkowa kamienica · 500 m od Rynku Głównego · 8 unikalnych apartamentów zaprojektowanych dla podróżujących, którzy cenią detale.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <Button onClick={onReserve} variant="primary">
+              <Button onClick={onReserve} variant="primary" className="hidden sm:inline-flex">
                 Zarezerwuj pobyt <span className="text-base">→</span>
               </Button>
               <a

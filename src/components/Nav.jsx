@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { Wordmark } from './Wordmark.jsx'
+import { LogoMark, Wordmark } from './Wordmark.jsx'
 import { Button } from './ui/Button.jsx'
 import { Container } from './ui/Container.jsx'
 
@@ -33,7 +33,12 @@ export function Nav({ onReserve }) {
       }`}>
         <Container className="h-20 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-3">
-            <Wordmark color={isDark ? '#D4AF37' : '#1C1C1C'} />
+            <span className="sm:hidden">
+              <LogoMark color={isDark ? '#D4AF37' : '#1C1C1C'} size={30} />
+            </span>
+            <span className="hidden sm:block">
+              <Wordmark color={isDark ? '#D4AF37' : '#1C1C1C'} />
+            </span>
           </a>
           <nav className="hidden lg:flex items-center gap-10">
             {LINKS.map((l) => (
@@ -56,7 +61,7 @@ export function Nav({ onReserve }) {
               Zarezerwuj pobyt
             </Button>
             <button
-              className={`lg:hidden ${isDark ? 'text-white' : 'text-bentis-graphite'}`}
+              className={`lg:hidden p-2 ${isDark ? 'text-white' : 'text-bentis-graphite'}`}
               onClick={() => setOpen(true)}
               aria-label="Menu"
             >
