@@ -24,14 +24,15 @@ export function Hero({ onReserve }) {
       <Container className="relative z-10 h-full flex flex-col">
         <div className="flex-1 flex items-end pb-20 lg:pb-32">
           <div className="max-w-5xl">
-            <h1 className="h-display text-white text-6xl md:text-7xl lg:text-[112px]">
+            <h1 className="h-display text-white text-5xl sm:text-6xl md:text-7xl lg:text-[112px]">
               <span className="block"><SplitText text="Luksus w sercu" /></span>
               <span className="block italic text-bentis-gold"><SplitText text="Krakowa." delayStart={600} /></span>
             </h1>
-            <p className="mt-10 text-white/75 text-base md:text-lg max-w-xl leading-relaxed font-light">
-              Zabytkowa kamienica · 500 m od Rynku Głównego · 8 unikalnych apartamentów zaprojektowanych dla podróżujących, którzy cenią detale.
+            <p className="mt-6 sm:mt-10 text-white/75 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed font-light">
+              <span className="sm:hidden">500 m od Rynku Głównego · 8 unikalnych apartamentów.</span>
+              <span className="hidden sm:inline">Zabytkowa kamienica · 500 m od Rynku Głównego · 8 unikalnych apartamentów zaprojektowanych dla podróżujących, którzy cenią detale.</span>
             </p>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-8 sm:mt-10 flex flex-wrap items-center gap-4">
               <Button onClick={onReserve} variant="primary" className="hidden sm:inline-flex">
                 Zarezerwuj pobyt <span className="text-base">→</span>
               </Button>
@@ -45,7 +46,7 @@ export function Hero({ onReserve }) {
           </div>
         </div>
 
-        <div className="pb-8 border-t border-white/10 pt-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-white/80 text-[11px] tracking-[0.2em] uppercase">
+        <div className="hidden sm:grid pb-8 border-t border-white/10 pt-6 grid-cols-2 md:grid-cols-4 gap-6 text-white/80 text-[11px] tracking-[0.2em] uppercase">
           <div className="flex items-center gap-3">
             <span className="text-bentis-gold font-serif text-2xl leading-none">9.9</span>
             <span>Ocena Booking</span>
