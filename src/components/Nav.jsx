@@ -33,7 +33,7 @@ export function Nav({ onReserve }) {
       }`}>
         <Container className="h-20 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-3">
-            <Wordmark color="#D4AF37" />
+            <Wordmark color={isDark ? '#D4AF37' : '#1C1C1C'} />
           </a>
           <nav className="hidden lg:flex items-center gap-10">
             {LINKS.map((l) => (

@@ -102,7 +102,7 @@ export const RIBBON_ITEMS = [
 export const CONTACT = {
   phone: '+48 000 000 000',
   email: 'rezerwacje@bentis-apartments.pl',
-  street: 'ul. Przykładowa 2',
-  cityLine: '31-000 Kraków, Polska',
-  mapsQuery: 'Rynek Główny, Kraków',
+  street: 'ul. Jabłonowskich 3',
+  cityLine: '31-114 Kraków, Polska',
+  mapsQuery: 'Jabłonowskich 3, 31-114 Kraków',
 }
