@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Loader } from './components/Loader.jsx'
 import { Nav } from './components/Nav.jsx'
 import { Hero } from './components/sections/Hero.jsx'
-import { Ribbon } from './components/Ribbon.jsx'
 import { Intro } from './components/sections/Intro.jsx'
 import { Location } from './components/sections/Location.jsx'
 import { Apartments } from './components/sections/Apartments.jsx'
@@ -31,7 +30,6 @@ export default function App() {
       <Nav onReserve={openReserve} />
       <main>
         <Hero onReserve={openReserve} />
-        <Ribbon />
         <Intro />
         <Location />
         <Apartments />

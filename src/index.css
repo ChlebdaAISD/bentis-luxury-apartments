@@ -225,6 +225,9 @@ details[open] .acc-icon { transform: rotate(45deg); }
   100% { transform: translateX(-50%); }
 }
 .marquee-track { animation: marquee 40s linear infinite; }
+@media (max-width: 767px) {
+  .marquee-track { animation-duration: 12s; }
+}
 
 /* logo mark wrapper */
 .logo-wings {
